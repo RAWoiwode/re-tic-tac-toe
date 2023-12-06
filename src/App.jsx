@@ -39,9 +39,9 @@ function App() {
             isActive={activePlayer === "O"}
           />
         </ol>
-        <GameBoard player={activePlayer} onSquareSelect={handleSquareSelect} />
+        <GameBoard onSquareSelect={handleSquareSelect} turns={gameTurns} />
       </div>
-      <Log />
+      <Log turns={gameTurns} />
     </main>
   );
 }
